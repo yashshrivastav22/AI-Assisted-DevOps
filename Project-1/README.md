@@ -26,6 +26,7 @@ Each run generates a Dockerfile **only** in the folder you specify — no other 
    ollama pull llama3.1
    ```
 3. Ensure Python 3.8+ is installed.
+```
 4. Folder Structure
 ├── python/
 │   └── app.py
@@ -38,6 +39,7 @@ Each run generates a Dockerfile **only** in the folder you specify — no other 
 ├── dockerfile_gen_multi.py
 └── README.md
 Note: The Dockerfile will be placed in the folder you specify (e.g., ./python/Dockerfile)
+```
 
 🛠 Usage
 1️⃣ Python
