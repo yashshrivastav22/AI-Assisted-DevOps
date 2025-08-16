@@ -122,7 +122,7 @@ JS
 
 #### Generate the Dockerfile
 ```bash
-./dockerfile_gen_multi.py --language node --app-dir ./node --version 22 --filename node/app.js
+./dockerfile_gen_multi.py --language nodejs --app-dir ./node --version 22 --filename node/app.js
 ```
 
 #### Dockerfile Output (`./node/Dockerfile`)
@@ -254,3 +254,4 @@ If a Dockerfile already exists in a folder, you must add `--force` to replace it
 ```
 
 ---
+
