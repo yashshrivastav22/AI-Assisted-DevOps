@@ -82,8 +82,8 @@ CMD ["python3", "app.py"]
 #### Build and Run
 ```bash
 cd python/
-docker build -t demoapp_python:v1 .
-docker run --rm demoapp_python:v1
+docker build -t demoapp_ollama_python:v1 .
+docker run --rm demoapp_ollama_python:v1
 ```
 
 #### Output
@@ -118,8 +118,8 @@ CMD ["node", "app.js"]
 #### Build and Run
 ```bash
 cd node/
-docker build -t demoapp_node:v1 .
-docker run --rm demoapp_node:v1
+docker build -t demoapp_ollama_node:v1 .
+docker run --rm demoapp_ollama_node:v1
 ```
 
 #### Output
@@ -155,8 +155,8 @@ CMD ["sh", "script.sh"]
 #### Build and Run
 ```bash
 cd shell/
-docker build -t demoapp_shell:v1 .
-docker run --rm demoapp_shell:v1
+docker build -t demoapp_ollama_shell:v1 .
+docker run --rm demoapp_ollama_shell:v1
 ```
 
 #### Output
@@ -193,8 +193,8 @@ CMD ["go", "run", "main.go"]
 #### Build and Run
 ```bash
 cd go/
-docker build -t demoapp_go:v1 .
-docker run --rm demoapp_go:v1
+docker build -t demoapp_ollama_go:v1 .
+docker run --rm demoapp_ollama_go:v1
 ```
 
 #### Output
