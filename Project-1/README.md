@@ -225,7 +225,7 @@ If a Dockerfile already exists in a folder, you must add `--force` to replace it
 ./dockerfile_gen_multi.py --language python --app-dir ./python --force
 ```
 
-## If you don't want to put app version, it will take default version mentioned in the "dockerfile_gen_multi.py" file
+If you don't want to put app version, it will take default version mentioned in the "dockerfile_gen_multi.py" file
 ```bash
 ./dockerfile_gen_multi.py --language python --app-dir ./python
 ```
