@@ -245,6 +245,9 @@ Project-1/
         └── Dockerfile
 ```
 
+## 🐋 Generated docker images by Gemini:
+![Alt text](../images/docker_images_gemini.PNG)
+
 ---
 
 ## ⚠ Overwriting an Existing Dockerfile
@@ -254,4 +257,5 @@ If a Dockerfile already exists in a folder, you must add `--force` to replace it
 ```
 
 ---
+
 
