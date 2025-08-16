@@ -231,6 +231,3 @@ If a Dockerfile already exists in a folder, you must add `--force` to replace it
 ```
 
 ---
-
-## 📜 License
-MIT
