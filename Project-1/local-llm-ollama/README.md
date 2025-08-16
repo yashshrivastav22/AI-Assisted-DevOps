@@ -224,6 +224,8 @@ Project-1/
         └── Dockerfile
 ```
 
+## 🐋 Generated docker images by Ollama:
+![Alt text](../images/docker_images_ollama.PNG)
 ---
 
 ## ⚠ Overwriting an Existing Dockerfile
