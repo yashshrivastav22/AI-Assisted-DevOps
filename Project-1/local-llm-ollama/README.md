@@ -21,7 +21,8 @@ Each run generates a Dockerfile **only** in the folder you specify, no other dir
    ```bash
    curl -fsSL https://ollama.com/install.sh | sh
    sudo systemctl enable ollama #optional
-   OLLAMA_HOST=127.0.0.1:11435 ollama serve
+   OLLAMA_HOST=127.0.0.1:11435 ollama serve & #press enter
+   jobs #check the ollama is running or not in background
    ```
 2. Pull the required model:
    ```bash
