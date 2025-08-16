@@ -33,20 +33,25 @@ Each run generates a Dockerfile **only** in the folder you specify, no other dir
 
 ### 0️⃣ Create Project Root and Language Folders
 ```bash
-mkdir -p Project-1/{python,node,shell,go}
+mkdir -p Project-1/local-llm-ollama/{python,node,shell,go}
 ```
 
 📂 Initial Folder Structure:
 ```
 Project-1/
-├── dockerfile_gen_targeted.py
-├── python/
-├── node/
-├── shell/
-├── go/
+└── local-llm-ollama/
+    ├── dockerfile_gen_multi.py       
+    ├── python/
+    │   ├── app.py
+    ├── node/
+    │   ├── app.js
+    ├── shell/
+    │   ├── script.sh
+    └── go/
+        ├── main.go
 ```
 ```bash
-cd Project-1/
+cd Project-1/local-llm-ollama
 ```
 ---
 
@@ -201,20 +206,20 @@ Hello from Go in Docker!
 
 ```
 Project-1/
-├── dockerfile_gen_multi.py
-├── python/
-│   ├── app.py
-│   └── Dockerfile
-├── node/
-│   ├── app.js
-│   └── Dockerfile
-├── shell/
-│   ├── script.sh
-│   └── Dockerfile
-├── go/
-│   ├── main.go
-│   └── Dockerfile
-└── README.md
+└── local-llm-ollama/
+    ├── dockerfile_gen_multi.py                     
+    ├── python/
+    │   ├── app.py
+    │   └── Dockerfile
+    ├── node/
+    │   ├── app.js
+    │   └── Dockerfile
+    ├── shell/
+    │   ├── script.sh
+    │   └── Dockerfile
+    └── go/
+        ├── main.go
+        └── Dockerfile
 ```
 
 ---
