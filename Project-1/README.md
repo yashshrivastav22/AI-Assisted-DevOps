@@ -31,6 +31,15 @@ Each run generates a Dockerfile **only** in the folder you specify — no other 
 ```bash
 mkdir -p Project-1/{python,node,shell,go}
 ```
+📂 Initial Folder Structure after creating the application folders
+```
+Project-1/
+├── dockerfile_gen_targeted.py
+├── python/
+├── node/
+├── shell/
+├── go/
+```
 ### 1️ Python
 #### Create the minimal Python app file
 ```bash
@@ -42,8 +51,8 @@ PY
 ```bash
 ./dockerfile_gen_targeted.py --language python --app-dir ./python --version 3.12 --filename python/app.py
 ```
-#### Output(./python/Dockerfile):
-```
+#### Dockerfile Output(./python/Dockerfile):
+```dockerfile
 FROM python:3.12-slim
 WORKDIR /app
 COPY app.py .
@@ -70,8 +79,8 @@ JS
 ```bash
 ./dockerfile_gen_targeted.py --language node --app-dir ./node --version 20 --filename node/app.py
 ```
-#### Output(./node/Dockerfile):
-```
+#### Dockerfile Output(./node/Dockerfile):
+```dockerfile
 FROM node:20-slim
 WORKDIR /app
 COPY app.js .
@@ -110,8 +119,8 @@ CMD ["sh", "script.sh"]
 ```bash
 ./dockerfile_gen_multi.py --language shell --app-dir ./shell --version 3.18 --filename shell/script.sh
 ```
-#### Output (./shell/Dockerfile):
-```
+#### Dockerfile Output (./shell/Dockerfile):
+```dockerfile
 FROM alpine:3.18
 WORKDIR /app
 COPY script.sh .
@@ -140,8 +149,8 @@ GO
 ```bash
 ./dockerfile_gen_multi.py --language go --app-dir ./go --version 1.22 --filename go/app.py
 ```
-#### Output(./go/Dockerfile):
-```
+#### Dockerfile Output(./go/Dockerfile):
+```dockerfile
 FROM golang:1.22-alpine
 WORKDIR /app
 COPY main.go .
@@ -156,21 +165,26 @@ docker run --rm demoapp_go:v1
 #### Output
 ```csharp
 Hello from Go in Docker!
-📂 Folder Structure
 ```
-
+📂 Folder Structure after generating the Dockerfile
 ```
 Project-1/
 ├── dockerfile_gen_targeted.py
 ├── python/
 │   └── app.py
+│   └── Dockerfile
 ├── node/
 │   └── app.js
+│   └── Dockerfile
 ├── shell/
 │   └── script.sh
+│   └── Dockerfile
 ├── go/
 │   └── main.go
+│   └── Dockerfile
 └── README.md
 ```
-
-
+```
+⚠ Overwriting an Existing Dockerfile
+If a Dockerfile already exists in a folder, you must add --force to replace it:
+```
