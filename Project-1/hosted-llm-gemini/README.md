@@ -12,7 +12,7 @@ The generator script (`dockerfile_gen_multi.py`) takes arguments for language, a
 ---
 ## 🚀 Project Structure
 ```
-Project-1/
+Dockerfile_generator_with_AI/
 └── hosted-llm-gemini/
     ├── dockerfile_gen_multi.py      
     ├── python
@@ -56,12 +56,12 @@ If you don't want to put app version, it will take default version mentioned in 
 
 ### 0️⃣ Create Project Root and Language Folders
 ```bash
-mkdir -p Project-1/{python,node,shell,go}
+mkdir -p Dockerfile_generator_with_AI/{python,node,shell,go}
 ```
 
 📂 Initial Folder Structure:
 ```
-Project-1/
+Dockerfile_generator_with_AI/
 └── hosted-llm-gemini/
     ├── dockerfile_gen_multi.py      
     ├── python
@@ -71,7 +71,7 @@ Project-1/
     └── .venv/
 ```
 ```bash
-cd Project-1/hosted-llm-gemini
+cd Dockerfile_generator_with_AI/hosted-llm-gemini
 ```
 ---
 
@@ -228,7 +228,7 @@ Hello Gemini from Go in Docker!
 ## 📂 Final Folder Structure
 
 ```
-Project-1/
+Dockerfile_generator_with_AI/
 └── hosted-llm-gemini/
     ├── dockerfile_gen_multi.py
     ├── python/
@@ -257,5 +257,6 @@ If a Dockerfile already exists in a folder, you must add `--force` to replace it
 ```
 
 ---
+
 
 
