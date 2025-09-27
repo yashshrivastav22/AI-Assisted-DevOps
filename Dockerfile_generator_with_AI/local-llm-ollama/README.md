@@ -226,7 +226,7 @@ Dockerfile_generator_with_AI/
 ```
 
 ## 🐋 Generated docker images by Ollama:
-![Alt text](../images/docker_images_ollama_llm.PNG)
+![Local LLM Ollama](https://github.com/yashshrivastav22/Images/blob/main/AI-Assisted-DevOps/Dockerfile_generator_with_AI/local-llm-ollama/docker_images_ollama_llm.PNG)
 ---
 
 ## ⚠ Overwriting an Existing Dockerfile
