@@ -246,7 +246,7 @@ Dockerfile_generator_with_AI/
 ```
 
 ## 🐋 Generated docker images by Gemini:
-![Alt text](../images/docker_images_hosted_llm.PNG)
+![Hosted LLM Gemini](https://github.com/yashshrivastav22/Images/blob/main/AI-Assisted-DevOps/Dockerfile_generator_with_AI/hosted-llm-gemini/docker_images_hosted_llm.PNG)
 
 ---
 
@@ -257,6 +257,7 @@ If a Dockerfile already exists in a folder, you must add `--force` to replace it
 ```
 
 ---
+
 
 
 
