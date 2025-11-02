@@ -148,11 +148,11 @@ Add this entry:
 The following video shows how **Claude Desktop** uses the MCP Server for Docker  
 to connect to a remote Docker context and perform live container operations.
 
-<p align="center">
-  <video src="assets/claude-mcp-docker-demo.mp4" width="800" controls poster="assets/claude-mcp-thumbnail.png">
-    Your browser does not support the video tag.
-  </video>
-</p>
+https://github.com/yashshrivastav22/Images/tree/main/AI-Assisted-DevOps/Docker_management_with_MCP/assets/mcp_docker_Claude_Desktop_demo.mp4
+
+<video src="https://github.com/yashshrivastav22/Images/tree/main/AI-Assisted-DevOps/Docker_management_with_MCP/assets/mcp_docker_Claude_Desktop_demo.mp4" controls width="600">
+  Your browser does not support the video tag.
+</video>
 
 ### 🧭 What’s Demonstrated
 1. Launching **Claude Desktop**
