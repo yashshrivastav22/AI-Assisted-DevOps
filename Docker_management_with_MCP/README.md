@@ -1,10 +1,8 @@
 # 🐳 MCP Server for Docker - Claude Desktop & Ask Gordon Integration Guide
 
-Easily connect **Claude Desktop** and **Docker Desktop** to your **remote Docker environments** through the  
-**[MCP Server for Docker](https://pypi.org/project/mcp-server-docker/)** adapter.  
+Easily connect **Claude Desktop** and **Docker Desktop** to your **remote Docker environments** through the **[MCP Server for Docker](https://pypi.org/project/mcp-server-docker/)** adapter.  
 
-This setup lets you manage Docker containers on AWS EC2 or any SSH-reachable host  
-directly through natural-language interaction — powered by **Claude Desktop** and **Ask Gordon**, Docker’s built-in AI assistant.
+This setup lets you manage Docker containers on AWS EC2 or any SSH-reachable host directly through natural-language interaction - powered by **Claude Desktop** and **Ask Gordon**, Docker’s built-in AI assistant.
 
 ---
 
@@ -14,11 +12,10 @@ directly through natural-language interaction — powered by **Claude Desktop** 
 
 It acts as a **middleware bridge** between AI tools and Docker:
 
-```
-Claude Desktop / Docker Desktop (Ask Gordon) ⇄ MCP Server for Docker ⇄ Docker Context ⇄ Remote AWS Host
-```
+![MCP_Docker_Flow](https://github.com/yashshrivastav22/Images/blob/main/AI-Assisted-DevOps/Docker_management_with_MCP/assets/MCP_Docker_Flow.png)
 
-Through this bridge, you can query, monitor, and control containers conversationally —  
+
+Through this bridge, you can query, monitor, and control containers conversationally -  
 for example:
 > “List all containers.”  
 > “Restart the nginx container.”  
@@ -95,8 +92,7 @@ docker context use my-remote-docker-host
 
 ## 🧠 4. Configure Claude Desktop
 
-Claude Desktop reads its integrations from a configuration file  
-(on Windows → `%APPDATA%\Claude\claude_desktop_config.json`).
+Claude Desktop reads its integrations from a configuration file (on Windows → `%APPDATA%\Claude\claude_desktop_config.json`).
 
 Add this entry:
 
@@ -148,11 +144,8 @@ Add this entry:
 The following video shows how **Claude Desktop** uses the MCP Server for Docker  
 to connect to a remote Docker context and perform live container operations.
 
-https://github.com/yashshrivastav22/Images/tree/main/AI-Assisted-DevOps/Docker_management_with_MCP/assets/mcp_docker_Claude_Desktop_demo.mp4
+![Claude Desktop MCP Docker](https://github.com/yashshrivastav22/Images/blob/main/AI-Assisted-DevOps/Docker_management_with_MCP/assets/mcp_docker_Claude_Desktop_demo.gif)
 
-<video src="https://github.com/yashshrivastav22/Images/tree/main/AI-Assisted-DevOps/Docker_management_with_MCP/assets/mcp_docker_Claude_Desktop_demo.mp4" controls width="600">
-  Your browser does not support the video tag.
-</video>
 
 ### 🧭 What’s Demonstrated
 1. Launching **Claude Desktop**
@@ -177,8 +170,7 @@ https://github.com/yashshrivastav22/Images/tree/main/AI-Assisted-DevOps/Docker_m
 | Cleanup | “Remove unused Docker images.” |
 | System info | “Which Docker context am I connected to?” |
 
-⚡ Ask Gordon translates natural language into Docker API actions using MCP —  
-enabling quick insights and automation directly within Docker Desktop.
+⚡ Ask Gordon translates natural language into Docker API actions using MCP - enabling quick insights and automation directly within Docker Desktop.
 
 ---
 
@@ -187,11 +179,7 @@ enabling quick insights and automation directly within Docker Desktop.
 Watch this short demo to see **Ask Gordon** in action inside **Docker Desktop**.  
 It showcases how you can interact with containers, monitor resources, and perform operations in real time.
 
-<p align="center">
-  <video src="assets/ask-gordon-demo.mp4" width="800" controls poster="assets/ask-gordon-thumbnail.png">
-    Your browser does not support the video tag.
-  </video>
-</p>
+![Claude Desktop MCP Docker](https://github.com/yashshrivastav22/Images/blob/main/AI-Assisted-DevOps/Docker_management_with_MCP/assets/mcp_docker_Docker_Desktop_demo.gif)
 
 ### 🧭 What’s Demonstrated
 1. Opening **Docker Desktop**
@@ -227,6 +215,20 @@ It showcases how you can interact with containers, monitor resources, and perfor
 
 ---
 
-> 🧩 **Author:** Yash  
+## 🙏 9. Acknowledgment
+This documentation and implementation are inspired by the open-source project **[mcp-server-docker](https://github.com/ckreiling/mcp-server-docker)** by **Chris Kreiling**.
+
+The repository provided the foundation for integrating the **Model Context Protocol (MCP)** with **Docker Desktop** and **Claude Desktop**, enabling secure and conversational container management through AI-driven DevOps workflows.
+
+Special thanks to:
+- **Chris Kreiling** - for publishing and maintaining the *mcp-server-docker* project.  
+- The **Anthropic team** - for developing the *Claude* ecosystem and MCP framework.  
+- The **Docker team** - for integrating *Ask Gordon*, bridging AI with container management.
+
+> 💡 *This guide builds upon the original MCP implementation by extending its use  
+  into a complete remote AWS context workflow and Docker Desktop integration.*
+
+---
+> 🧩 **Author:** Yash Shrivastav  
 > 🔗 *Integrating Claude MCP and Ask Gordon for AI-assisted Docker management.*  
-> 💬 *“Claude + Gordon” — Unified, intelligent DevOps automation.*
+> 💬 *“Claude + Gordon” - Unified, intelligent DevOps automation.*
